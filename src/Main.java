@@ -1,12 +1,10 @@
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        List<Integer> list = List.of(1,2,-4,6,10,11,2,45,-8,6,7,-2,10);
+        List<Integer> list = List.of(-8,7,2,5,-1,-4,4,11,-9,0,3,8,6);
         System.out.println(list);
-        Set<Integer> newList = new TreeSet<>();
+        Set<Integer> newList = new LinkedHashSet<>();
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i) >= 0) {
                 newList.add(list.get(i));
